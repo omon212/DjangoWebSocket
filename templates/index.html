@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Test</title>
+</head>
+<body>
+    <h1>WebSocket Test Page</h1>
+    <script>
+        var socket = new WebSocket('ws://127.0.0.1:8000/ws/some_path/');
+
+        socket.onmessage = function(event) {
+            var message = event.data;
+            console.log('Message from server: ', message);
+        };
+
+        socket.onopen = function(event) {
+            socket.send('Hello, server!');
+        };
+    </script>
+</body>
+</html>
+
