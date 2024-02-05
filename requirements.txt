@@ -2,9 +2,12 @@ asgiref==3.7.2
 async-timeout==4.0.3
 channels==4.0.0
 channels-redis==4.2.0
+click==8.1.7
 Django==4.2.9
 django-sesame==3.2.2
+h11==0.14.0
 msgpack==1.0.7
 redis==5.0.1
 sqlparse==0.4.4
 typing_extensions==4.9.0
+uvicorn==0.27.0.post1
